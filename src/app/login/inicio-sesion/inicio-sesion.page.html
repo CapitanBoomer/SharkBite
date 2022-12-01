@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Iniciar sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -18,10 +18,15 @@
         <ion-label position="floating">Contraseña</ion-label>
         <ion-input type="password" formControlName="pass"></ion-input>
       </ion-item>
-        <ion-item>
-          <ion-button type="submit" type="submit">Iniciar sesión
-          </ion-button>
-        </ion-item>
+      <ion-item>
+        <ion-button [routerLink]="['']" color="danger">Cancelar
+        </ion-button>
+        <ion-button type="submit" type="submit" slot="end" color="success">
+          Ingresar<ion-icon name="log-in-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+
 
     </form>
   </ion-card>

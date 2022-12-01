@@ -1,5 +1,3 @@
-
-
 <ion-content>
   <ion-card>
     <ion-card-header>
@@ -13,18 +11,21 @@
         </ion-item>
         <ion-item>
           <ion-label position="floating">Contraseña</ion-label>
-          <ion-input formControlName="pass" type="password" ></ion-input>
+          <ion-input formControlName="pass" type="password"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Código del producto</ion-label>
           <ion-input formControlName="codigo"></ion-input>
         </ion-item>
         <ion-item>
-        ¿Dueño del producto?<ion-toggle color="primary" [checked]="false"></ion-toggle>
+          ¿Dueño del producto?<ion-toggle color="primary" [checked]="false"></ion-toggle>
         </ion-item>
-        <br>
-        <ion-button (click)="guardarDatos()">Registrarse
-        </ion-button>
+        <ion-item>
+          <ion-button [routerLink]="['']" color="danger">Cancelar
+          </ion-button>
+          <ion-button (click)="guardarDatos()" slot="end" color="success">Registrarse
+          </ion-button>
+        </ion-item>
       </form>
     </ion-card-content>
   </ion-card>
