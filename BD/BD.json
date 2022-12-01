@@ -1,0 +1,32 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre_usuario": "diego",
+      "pass": "contra",
+      "codigo": "12321hd",
+      "admin": true
+    },
+    {
+      "nombre_usuario": "shunn",
+      "pass": "1234",
+      "codigo": "12321",
+      "admin": false,
+      "id": 2
+    },
+    {
+      "nombre_usuario": "toto",
+      "pass": "tata",
+      "codigo": "123asd",
+      "admin": false,
+      "id": 3
+    },
+    {
+      "nombre_usuario": "papa",
+      "pass": "papa",
+      "codigo": "123papa",
+      "admin": false,
+      "id": 4
+    }
+  ]
+}

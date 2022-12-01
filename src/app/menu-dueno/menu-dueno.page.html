@@ -1,0 +1,65 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>opciones</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">aqui va el cerrar la sesion</ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-icon name="lock-open-outline" slot="start"></ion-icon>
+            <ion-card-subtitle>Cerrar Puerta</ion-card-subtitle>
+            <ion-toggle color="secondary" [checked]="false" slot="end"></ion-toggle>
+          </ion-item>
+        </ion-card-content>
+        <ion-card-content>
+          <ion-item>
+            <ion-icon name="alarm-outline" slot="start"></ion-icon>
+            <ion-card-subtitle>Asignar horas</ion-card-subtitle>
+          </ion-item>
+        </ion-card-content>
+        <ion-card-content>
+          <ion-item>
+            <ion-icon name="volume-mute-outline" slot="start"></ion-icon>
+            <ion-card-subtitle>Activar alarma</ion-card-subtitle>
+            <ion-toggle color="secondary" [checked]="false" slot="end"></ion-toggle>
+          </ion-item>
+        </ion-card-content>
+        <ion-card-content>
+          <ion-item>
+            <ion-icon name="flashlight-outline" slot="start"></ion-icon>
+            <ion-card-subtitle>Emisor de luz</ion-card-subtitle>
+            <ion-toggle color="secondary" [checked]="false" slot="end"></ion-toggle>
+          </ion-item>
+        </ion-card-content>
+        <ion-card-content>
+          <ion-item>
+            <ion-icon name="shield-outline" slot="start"></ion-icon>
+            <ion-card-subtitle>Avisos de seguridad</ion-card-subtitle>
+          </ion-item>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-icon name="settings-outline" slot="start"></ion-icon>
+          <ion-card-subtitle>Ajustes</ion-card-subtitle>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    </ion-content>
+  </div>
+</ion-app>

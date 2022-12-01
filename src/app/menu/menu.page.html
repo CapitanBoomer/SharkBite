@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bienvenide</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+    <ion-content>
+      <ion-card>
+        <img src="https://cdn.discordapp.com/attachments/996255673698488323/1021465841176420452/Logo_deportivo_de_ave_fenix_naranjado_con_negro_y_blanco_3.png" alt="">
+        <ion-card-content>
+          <ion-button [routerLink]="['/inicio-sesion']">
+            <ion-icon slot="start" name="person-outline"></ion-icon>
+            Iniciar Sesión
+          </ion-button>
+          <ion-button [routerLink]="['/registro-usuario']">
+            <ion-icon slot="start" name="person-add-outline"></ion-icon>
+            Registrarse
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
