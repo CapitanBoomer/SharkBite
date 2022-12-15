@@ -42,7 +42,7 @@ export class InicioSesionPage implements OnInit {
     console.log(this.formulario.value)
     if (this.usuario) {
       if (this.usuario.pass == this.formulario.value.pass) { if (this.usuario.admin == true) { this.router.navigate(['menu-dueno']) }
-      else { this.router.navigate(['menu-dueno']) } }
+      else { this.router.navigate(['menu-invitado']) } }
       else { }
     }
     else {  }

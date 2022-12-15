@@ -1,0 +1,72 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Opciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="arrow-back-circle-outline" slot="start"></ion-icon>
+        <ion-label>Desconectarse</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="['/administrar-perfiles']">
+        <ion-icon name="people-outline" slot="start"></ion-icon>
+        <ion-label>Perfiles</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu principal</ion-title>
+      <ion-avatar slot="end"><img
+          src="https://cdn.discordapp.com/attachments/996255673698488323/1021466125231472701/logo_app_nueva.png" alt="">
+      </ion-avatar>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+
+    <!--Listdo de productos-->
+    <ion-card *ngFor="let usuario of listarUsuarios">
+
+      <ion-card-subtitle>
+        <h5>{{usuario.nombre_usuario}}</h5>
+      </ion-card-subtitle>
+      <ion-card-content >
+        <ion-button size="small" [routerLink]="['/modificar-usuario', usuario.id]" slot="end">
+          Modificar
+        </ion-button>
+        <ion-button size="small" [routerLink]="['/modificar-usuario', usuario.id]" slot="end">
+          eliminar
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Infinite scroll-->
+    <ion-infinite-scroll (ionInfinite)="cargarMasProds()">
+      <ion-infinite-scroll-content loadingText="Cargando mas productos . . .">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>

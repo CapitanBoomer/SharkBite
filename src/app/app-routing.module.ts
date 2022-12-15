@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'menu-dueno',
     loadChildren: () => import('./menu-dueno/menu-dueno.module').then( m => m.MenuDuenoPageModule)
   },
+  {
+    path: 'menu-invitado',
+    loadChildren: () => import('./menu-invitado/menu-invitado.module').then( m => m.MenuInvitadoPageModule)
+  },
+  {
+    path: 'administrar-perfiles',
+    loadChildren: () => import('./administrar-perfiles/administrar-perfiles.module').then( m => m.AdministrarPerfilesPageModule)
+  },
 ];
 
 @NgModule({

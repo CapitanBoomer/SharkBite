@@ -5,7 +5,6 @@ export interface Usuarios {
   codigo?:string,
   admin?:boolean,
 }
-
 export interface UsuarioConID extends Usuarios{
   id: string;
 }
