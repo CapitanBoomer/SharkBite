@@ -2,14 +2,14 @@
   "usuarios": [
     {
       "id": 1,
-      "nombre_usuario": "Geppetto",
-      "pass": "dueño",
+      "nombre_usuario": "homero",
+      "pass": "1234",
       "codigo": "12321hd",
       "admin": true
     },
     {
-      "nombre_usuario": "Pinocho",
-      "pass": "hijo",
+      "nombre_usuario": "bart",
+      "pass": "1234",
       "codigo": "12321",
       "admin": false,
       "id": 2

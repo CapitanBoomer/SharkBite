@@ -48,3 +48,4 @@ export class AdministrarPerfilesPage implements OnInit {
   }
 
 }
+
