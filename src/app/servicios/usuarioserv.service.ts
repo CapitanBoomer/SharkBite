@@ -45,7 +45,9 @@ public mostrarMasUsers(){
 }
 
 
-
+public eliminaPorId(id: number): Observable<any>{
+  return this.cliente.delete(`${this.API_usuario_URL}/${id}`);
+}
 
 
 }

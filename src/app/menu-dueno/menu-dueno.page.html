@@ -50,7 +50,7 @@
           <ion-item>
             <ion-icon name="lock-open-outline" slot="start"></ion-icon>
             <ion-card-subtitle>Cerrar Puerta</ion-card-subtitle>
-            <ion-toggle color="secondary" [checked]="false" slot="end"></ion-toggle>
+            <ion-toggle color="secondary"  slot="end" [(ngModel)]="puerta" (ionChange)="puertaabierta($event)"></ion-toggle>
           </ion-item>
         </ion-card-content>
         <ion-card-content>
@@ -63,14 +63,14 @@
           <ion-item>
             <ion-icon name="volume-mute-outline" slot="start"></ion-icon>
             <ion-card-subtitle>Activar alarma</ion-card-subtitle>
-            <ion-toggle color="secondary" [checked]="false" slot="end"></ion-toggle>
+            <ion-toggle color="secondary" [checked]="false" slot="end" [(ngModel)]="alarma"></ion-toggle>
           </ion-item>
         </ion-card-content>
         <ion-card-content>
           <ion-item>
             <ion-icon name="flashlight-outline" slot="start"></ion-icon>
             <ion-card-subtitle>Emisor de luz</ion-card-subtitle>
-            <ion-toggle color="secondary" [checked]="false" slot="end"></ion-toggle>
+            <ion-toggle color="secondary" [checked]="false" slot="end" [(ngModel)]="luz"></ion-toggle>
           </ion-item>
         </ion-card-content>
         <ion-card-content>

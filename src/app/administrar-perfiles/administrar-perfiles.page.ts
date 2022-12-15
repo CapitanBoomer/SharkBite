@@ -13,6 +13,7 @@ export class AdministrarPerfilesPage implements OnInit {
 
   public listarUsuarios : Array<UsuarioConID> = [];
 
+  public idActiva = '';
 
 
   constructor(
@@ -46,6 +47,19 @@ export class AdministrarPerfilesPage implements OnInit {
   public cargarMasProds(){
     this.apiUsuarios.mostrarMasUsers();
   }
+
+
+  public borrar(){
+    this.apiUsuarios.eliminaPorId(+this.idActiva).subscribe(dato =>{
+      if(dato){
+
+        this.router.navigate(['/administrar-perfiles']);
+      }
+    })
+  }
+
+
+
 
 }
 
